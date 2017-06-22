@@ -1,5 +1,4 @@
-@-moz-document domain("dcard.tw")
-{
+@-moz-document domain("dcard.tw") {
 /* ========================================================================
 		 ██████╗  █████╗ ██████╗ ██╗  ██╗            
 		 ██╔══██╗██╔══██╗██╔══██╗██║ ██╔╝            
@@ -19,13 +18,13 @@
 		|_|  |___||_|    |____/ |___||___||__,||_|  |___|
 
 		User ID: 118195
-		Updated: 2017/05/23
+		Updated: 2017/06/22
 		
 		Old:
 		https://www.dcard.tw/f/dcard/p/1145060
 		https://userstyles.org/styles/124504/dark-theme-for-dcard
 
-		Version: 3.14159265358979323846264338
+		Version: 3.141592653589793238462643383
 		https://www.dcard.tw/f/dcard/p/224044083
 		https://userstyles.org/styles/128046/dark-theme-for-dcard2
 
@@ -361,24 +360,39 @@ textarea,
 /* Text */
 .PostEntry_title_t1BVP,
 .PostAuthorHeader_large_14BBC .PostAuthorHeader_author_320Uv,
-.PostAuthorHeader_large_niQ5f .PostAuthorHeader_author_3O30x {
+.PostAuthorHeader_large_niQ5f .PostAuthorHeader_author_3O30x,
+.PostEntry_title_H5o4d {
     color: #ddd;
 }
-.PostEntry_titleUnread_ycJL0 {
+.PostEntry_titleUnread_ycJL0,
+.PostEntry_title_H5o4d.PostEntry_unread_2U217 {
     color: #7EBCFF;
 }
 .PostEntry_forum_3OvOh {
 	color: #888;
     border-color: #888;
 }
-.PostEntry_excerpt_A0Bmh {
-    color: #aaa;
+.PostEntry_forum_1m8nJ {
+	opacity: .6;
+}
+.PostEntry_forum_1m8nJ:hover {
+    opacity: .75;
+}
+.PostEntry_excerpt_2eHlN {
+    color: #ccc;
 }
 .PostEntry_author_38yft,
 .PersonaEntry_uid_3zzK1,
 .PersonaEntry_postCount_12Bky,
-.PostAuthorHeader_container_3OvMq {
-	color: #ccc;
+.PostAuthorHeader_container_3OvMq,
+.PostAuthor_root_3vAJf {
+	color: #ddd;
+}
+.PostAuthorHeader_container_1HIAg.PostAuthorHeader_tiny_20MBV .PostAuthorHeader_author_3O30x {
+	opacity: .65;
+}
+.PostEntry_picture_1d7uX .PostEntry_image_1E6Mi {
+	border-color: #384248;
 }
 .PostEntry_comment_18ty5 {
     color: #ddd;
@@ -390,6 +404,36 @@ textarea,
     -moz-filter: grayscale(70%) brightness(300%);
     -ms-filter: grayscale(70%) brightness(300%);
     -o-filter: grayscale(70%) brightness(300%);
+}
+.PostList_entry_1rq5L {
+	background-color: #37474F;
+    border-color: #263238;
+}
+.PostList_entry_1rq5L:hover {
+    background-color: #4A575F;
+}
+.Like_counter_1enlP {
+	color: #ddd;
+}
+.Like_root_3buBT.Like_clickable_nOA6Y:hover:not(.Like_liked_3LkBP) .Like_heart_1rPPX {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.15" /><feFuncG type="linear" slope="=1.15" /><feFuncB type="linear" slope="1.15" /></feComponentTransfer></filter></svg>#filter');
+    -webkit-filter: brightness(115%);
+    filter: brightness(115%);
+}
+.PostEntry_collect_2MUL3 {
+    color: rgba(255,255,255,.3);
+}
+.PostEntry_collect_2MUL3:before {
+	background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0i5ZyW5bGkXzEiIGRhdGEtbmFtZT0i5ZyW5bGkIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEyIDE2Ij48ZGVmcz48c3R5bGU+LmNscy0xe29wYWNpdHk6LjQ1fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5ub3JtYWw8L3RpdGxlPjxnIGlkPSJTeW1ib2xzIiBjbGFzcz0iY2xzLTEiPjxnIGlkPSLkuIDoiKznnIvmnb/mlofnq6Dmop3nm65f5Lul5paH54K66YeNLWNvcHkiIGRhdGEtbmFtZT0i5LiA6Iis55yL5p2/5paH56ug5qKd55uuIOS7peaWh+eCuumHjS1jb3B5Ij48ZyBpZD0iR3JvdXAtMTEiPjxnIGlkPSJHcm91cC0yMiI+PGcgaWQ9Ikdyb3VwLV8tR3JvdXAtQ29weS00IiBkYXRhLW5hbWU9Ikdyb3VwLSstR3JvdXAtQ29weS00Ij48ZyBpZD0iR3JvdXAtMjEiPjxnIGlkPSJHcm91cC1Db3B5LTQiPjxwYXRoIGlkPSJGaWxsLTEiIGZpbGw9IiNGRkZGRkYiIGQ9Ik05LjYgMEgyLjRBMi4yOCAyLjI4IDAgMCAwIDAgMi4xNHYxMi43OWExLjIyIDEuMjIgMCAwIDAgMiAuODRsNC0yLjkgNC4wNSAyLjlhMS4yMiAxLjIyIDAgMCAwIDEuOTUtLjg0VjIuMTRBMi4yOCAyLjI4IDAgMCAwIDkuNiAwIi8+PC9nPjwvZz48L2c+PC9nPjwvZz48L2c+PC9nPjwvc3ZnPg==);
+}
+.PostEntry_collect_2MUL3.PostEntry_clickable_1io_k:hover:not(.PostEntry_active_1Di7Q):before {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0i5ZyW5bGkXzEiIGRhdGEtbmFtZT0i5ZyW5bGkIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEyIDE2Ij48ZGVmcz48c3R5bGU+LmNscy0xe29wYWNpdHk6LjZ9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmhvdmVyPC90aXRsZT48ZyBpZD0iU3ltYm9scyIgY2xhc3M9ImNscy0xIj48ZyBpZD0i5LiA6Iis55yL5p2/5paH56ug5qKd55uuX+S7peaWh+eCuumHjS1jb3B5IiBkYXRhLW5hbWU9IuS4gOiIrOeci+adv+aWh+eroOaineebriDku6Xmlofngrrph40tY29weSI+PGcgaWQ9Ikdyb3VwLTExIj48ZyBpZD0iR3JvdXAtMjIiPjxnIGlkPSJHcm91cC1fLUdyb3VwLUNvcHktNCIgZGF0YS1uYW1lPSJHcm91cC0rLUdyb3VwLUNvcHktNCI+PGcgaWQ9Ikdyb3VwLTIxIj48ZyBpZD0iR3JvdXAtQ29weS00Ij48cGF0aCBpZD0iRmlsbC0xIiBmaWxsPSIjRkZGRkZGIiBkPSJNOS42IDBIMi40QTIuMjggMi4yOCAwIDAgMCAwIDIuMTR2MTIuNzlhMS4yMiAxLjIyIDAgMCAwIDIgLjg0bDQtMi45IDQuMDUgMi45YTEuMjIgMS4yMiAwIDAgMCAxLjk1LS44NFYyLjE0QTIuMjggMi4yOCAwIDAgMCA5LjYgMCIvPjwvZz48L2c+PC9nPjwvZz48L2c+PC9nPjwvZz48L3N2Zz4=);
+}
+.PostEntry_collect_2MUL3.PostEntry_clickable_1io_k:hover {
+    color: rgba(255,255,255,.45);
+}
+.PostEntry_comments_2iY8V {
+	color: #fff;
 }
 
 /* Search */
@@ -469,6 +513,9 @@ textarea,
 }
 .PostAuthorHeader_author_3O30x {
     color: #ddd;
+}
+.PostAuthorHeader_container_1HIAg.PostAuthorHeader_normal_1g1dO .PostAuthorHeader_author_3O30x {
+    opacity: .65;
 }
 .Post_forum_2urwA {
     color: #7EBCFF;
@@ -612,7 +659,8 @@ textarea,
 }
 
 /* Post Loading */
-.PostLoading_wrapper_-HHCj {
+.PostLoading_wrapper_-HHCj,
+.PostEntryLoading_loadingBlock_13nhQ {
     background-color: #37474F;
     background-image: -webkit-linear-gradient(left,#37474F,#384248 20%,#263238 40%,#37474F);
     background-image: linear-gradient(90deg,#37474F,#384248 20%,#263238 40%,#37474F);
@@ -628,7 +676,14 @@ textarea,
 .PostLoading_header_3qiUX .PostLoading_forumContainer_220ay,
 .PostLoading_headerBottomMask_L5w5a,
 .PostLoading_contentContainer_3Y9Yb div,
-.PostLoading_contentSeparator_30P0y {
+.PostLoading_contentSeparator_30P0y,
+.PostEntryLoading_loadingMaskHeader_2aluR,
+.PostEntryLoading_loadingMaskSep1_3wRaJ,
+.PostEntryLoading_loadingMaskSep2_3XVjp,
+.PostEntryLoading_loadingMaskTitle_1VzkN,
+.PostEntryLoading_loadingMaskExcerpt_1JH5U, 
+.PostEntryLoading_loadingMaskSep3_1ZrkP,
+.PostEntryLoading_loadingMaskFooter_3Vrab {
 	background: #263238;
 }
 .PostLoading_header_3qiUX .PostLoading_avatarContainer_2UZjm .PostLoading_avatar_QfFI0
