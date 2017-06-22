@@ -45,4 +45,5 @@ https://www.dcard.tw/f/dcard/p/224044083
 <li>ver. 3.141592653589793238462643 - 2017/04/22 Add: Post Subscription Form</li>
 <li>ver. 3.1415926535897932384626433 - 2017/05/21 Add: Report Button of Dcard Page</li>
 <li>ver. 3.14159265358979323846264338 - 2017/05/23 Fix: Configs Page, Email Resend Modal</li>
+<li>ver. 3.141592653589793238462643383 - 2017/06/22 Fix: New UI</li>
 </ul>
