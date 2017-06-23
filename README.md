@@ -2,6 +2,7 @@
 https://userstyles.org/styles/124504/dark-theme-for-dcard
 
 # A Dark Theme for Dcard2:
+https://userstyles.org/styles/128046/dark-theme-for-dcard2
 https://www.dcard.tw/f/dcard/p/224044083
 
 <ul>
@@ -46,4 +47,5 @@ https://www.dcard.tw/f/dcard/p/224044083
 <li>ver. 3.1415926535897932384626433 - 2017/05/21 Add: Report Button of Dcard Page</li>
 <li>ver. 3.14159265358979323846264338 - 2017/05/23 Fix: Configs Page, Email Resend Modal</li>
 <li>ver. 3.141592653589793238462643383 - 2017/06/22 Fix: New UI</li>
+<li>ver. 3.1415926535897932384626433832 - 2017/06/24 Fix: New UI AGAIN!</li>
 </ul>
