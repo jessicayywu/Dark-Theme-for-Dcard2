@@ -18,13 +18,13 @@
 		|_|  |___||_|    |____/ |___||___||__,||_|  |___|
 
 		User ID: 118195
-		Updated: 2017/06/22
+		Updated: 2017/06/24
 		
 		Old:
 		https://www.dcard.tw/f/dcard/p/1145060
 		https://userstyles.org/styles/124504/dark-theme-for-dcard
 
-		Version: 3.141592653589793238462643383
+		Version: 3.1415926535897932384626433832
 		https://www.dcard.tw/f/dcard/p/224044083
 		https://userstyles.org/styles/128046/dark-theme-for-dcard2
 
@@ -236,7 +236,9 @@ a:hover {
 .PostBar_moreMenuButtonSubscribe_32ujb:hover,
 .PostBar_moreMenuButtonReply_hh96E:hover,
 .PostBar_moreMenuButtonReport_2W-yf:hover,
-.CommentEntry_moreMenuBtn_sPGif:hover {
+.CommentEntry_moreMenuBtn_sPGif:hover,
+.PostListHeader_unsubscribed_2NIAB:hover,
+.PostListHeader_subscribed_2bTED:hover {
     background-color: rgba(64, 196, 255, .1) !important;
 }
 .PostBar_moreMenuButtonSubscribe_32ujb,
@@ -248,8 +250,7 @@ a:hover {
 
 /* ---------------------Form--------------------- */
 .PostForm_form_jqK_U,
-.PostForm_nav_3WuYm,
-.PostListHeader_header_2KjhK {
+.PostForm_nav_3WuYm {
     background-color: #263238;
 }
 .PostForm_forumSelectBtn_1LoQb {
@@ -352,8 +353,25 @@ textarea,
 .SearchPage_loadingBlock_G-QDe {
 	display: none;
 }
+.PostListHeader_header_2KjhK {
+    background-color: #263238;
+}
 .PostEntry_entry_2rsgm:hover,
 .PersonaEntry_wrapper_3q3aW:hover {
+    background-color: #4A575F;
+}
+.PostListPage_subcategory_2MAdv {
+    background-color: #37474F;
+    border-color: #263238;
+}
+.PostListPage_subcategory_2MAdv:hover {
+    background-color: #4A575F;
+}
+.PostList_entry_1rq5L {
+	background-color: #37474F;
+    border-color: #263238;
+}
+.PostList_entry_1rq5L:hover {
     background-color: #4A575F;
 }
 
@@ -372,11 +390,13 @@ textarea,
 	color: #888;
     border-color: #888;
 }
-.PostEntry_forum_1m8nJ {
-	opacity: .6;
+.PostEntry_forum_1m8nJ,
+.PostEntry_pinned_2AouY,
+.PostEntry_published_229om {
+	opacity: .8;
 }
 .PostEntry_forum_1m8nJ:hover {
-    opacity: .75;
+    opacity: .95;
 }
 .PostEntry_excerpt_2eHlN {
     color: #ccc;
@@ -388,8 +408,9 @@ textarea,
 .PostAuthor_root_3vAJf {
 	color: #ddd;
 }
-.PostAuthorHeader_container_1HIAg.PostAuthorHeader_tiny_20MBV .PostAuthorHeader_author_3O30x {
-	opacity: .65;
+.PostAuthorHeader_container_1HIAg.PostAuthorHeader_tiny_20MBV .PostAuthorHeader_author_3O30x ,
+.PostAuthorHeader_container_1HIAg.PostAuthorHeader_small_279Md .PostAuthorHeader_author_3O30x {
+	opacity: .85;
 }
 .PostEntry_picture_1d7uX .PostEntry_image_1E6Mi {
 	border-color: #384248;
@@ -404,13 +425,6 @@ textarea,
     -moz-filter: grayscale(70%) brightness(300%);
     -ms-filter: grayscale(70%) brightness(300%);
     -o-filter: grayscale(70%) brightness(300%);
-}
-.PostList_entry_1rq5L {
-	background-color: #37474F;
-    border-color: #263238;
-}
-.PostList_entry_1rq5L:hover {
-    background-color: #4A575F;
 }
 .Like_counter_1enlP {
 	color: #ddd;
@@ -437,6 +451,9 @@ textarea,
 }
 
 /* Search */
+.SearchHeader_fixed_3VvsE {
+    background-color: #263238;
+}
 .SearchForm_input_3u6iB {
     background-color: #607D8B;
     color: #ddd;
@@ -453,8 +470,30 @@ textarea,
 	color: #eee;
 }
 .SearchPage_queryTitle_7p0Bj,
-.PersonaSearchPage_queryTitle_27JQO {
+.PersonaSearchPage_queryTitle_27JQO,
+.ForumSearchEntry_forum_3dC33 {
     color: #ddd;
+}
+.PersonaList_entry_23pu6,
+.PersonaList_list_3VyZy,
+.ForumSearchList_entry_2MdYq,
+.ForumSearchList_list_TIFvP {
+    background-color: #37474F;
+    border-color: #263238;
+}
+.PersonaList_entry_23pu6:hover,
+.ForumSearchList_entry_2MdYq:hover {
+    background-color: #4A575F;
+}
+.ForumSearchEntry_button_IAyCb:hover {
+    background-color: rgba(64, 196, 255, .3) !important;
+}
+.ForumSearchEntry_button_IAyCb {
+    filter: brightness(120%);
+    -webkit-filter: brightness(120%);
+    -moz-filter: brightness(120%);
+    -ms-filter: brightness(120%);
+    -o-filter: brightness(120%);
 }
 
 .PopupModal_container_zeuvz {
@@ -515,7 +554,7 @@ textarea,
     color: #ddd;
 }
 .PostAuthorHeader_container_1HIAg.PostAuthorHeader_normal_1g1dO .PostAuthorHeader_author_3O30x {
-    opacity: .65;
+    opacity: .85;
 }
 .Post_forum_2urwA {
     color: #7EBCFF;
