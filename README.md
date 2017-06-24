@@ -51,7 +51,7 @@ https://www.dcard.tw/f/dcard/p/224044083
 <li>ver. 3.14159265358979323846264338327 - 2017/06/24 Add Add-Ons: Hide Picture Preview; Fix: Color of Persona List</li>
 </ul>
 
-#Add-ons
 
+# Add-ons:
 Hide Preview Picture
 https://www.dcard.tw/f/dcard/p/226679716
