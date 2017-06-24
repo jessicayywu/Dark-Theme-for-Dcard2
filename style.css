@@ -1,4 +1,4 @@
-@-moz-document domain("dcard.tw") {
+﻿@-moz-document domain("dcard.tw") {
 /* ========================================================================
 		 ██████╗  █████╗ ██████╗ ██╗  ██╗            
 		 ██╔══██╗██╔══██╗██╔══██╗██║ ██╔╝            
@@ -24,7 +24,7 @@
 		https://www.dcard.tw/f/dcard/p/1145060
 		https://userstyles.org/styles/124504/dark-theme-for-dcard
 
-		Version: 3.1415926535897932384626433832
+		Version: 3.14159265358979323846264338327
 		https://www.dcard.tw/f/dcard/p/224044083
 		https://userstyles.org/styles/128046/dark-theme-for-dcard2
 
@@ -494,6 +494,9 @@ textarea,
     -moz-filter: brightness(120%);
     -ms-filter: brightness(120%);
     -o-filter: brightness(120%);
+}
+.PersonaList_footer_cAsWw {
+    color: rgba(255,255,255,.6);
 }
 
 .PopupModal_container_zeuvz {

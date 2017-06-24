@@ -48,4 +48,10 @@ https://www.dcard.tw/f/dcard/p/224044083
 <li>ver. 3.14159265358979323846264338 - 2017/05/23 Fix: Configs Page, Email Resend Modal</li>
 <li>ver. 3.141592653589793238462643383 - 2017/06/22 Fix: New UI</li>
 <li>ver. 3.1415926535897932384626433832 - 2017/06/24 Fix: New UI AGAIN!</li>
+<li>ver. 3.14159265358979323846264338327 - 2017/06/24 Add Add-Ons: Hide Picture Preview; Fix: Color of Persona List</li>
 </ul>
+
+#Add-ons
+
+Hide Preview Picture
+https://www.dcard.tw/f/dcard/p/226679716
