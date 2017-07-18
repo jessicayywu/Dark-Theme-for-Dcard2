@@ -18,13 +18,13 @@
 		|_|  |___||_|    |____/ |___||___||__,||_|  |___|
 
 		User ID: 118195
-		Updated: 2017/06/24
+		Updated: 2017/07/18
 		
 		Old:
 		https://www.dcard.tw/f/dcard/p/1145060
 		https://userstyles.org/styles/124504/dark-theme-for-dcard
 
-		Version: 3.14159265358979323846264338327
+		Version: 3.141592653589793238462643383279
 		https://www.dcard.tw/f/dcard/p/224044083
 		https://userstyles.org/styles/128046/dark-theme-for-dcard2
 
@@ -50,7 +50,8 @@ a:hover {
 .Header_header_gbQ7g {
     background-color: #37474F;
 }
-.Header_activeBtn_2fbA2 {
+.Header_activeBtn_2fbA2,
+.Header_activeLink_sqIWM {
     background-color: #263238;
 }
 
@@ -226,6 +227,7 @@ a:hover {
 .PostBar_moreMenuButtonSubscribe_32ujb,
 .PostBar_moreMenuButtonReply_hh96E,
 .PostBar_moreMenuButtonReport_2W-yf,
+.PostBar_moreMenuButtonEmbed_39URI,
 .CommentEntry_img_2Z9c2 {
     filter: brightness(200%);
     -webkit-filter: brightness(200%);
@@ -236,6 +238,7 @@ a:hover {
 .PostBar_moreMenuButtonSubscribe_32ujb:hover,
 .PostBar_moreMenuButtonReply_hh96E:hover,
 .PostBar_moreMenuButtonReport_2W-yf:hover,
+.PostBar_moreMenuButtonEmbed_39URI:hover,
 .CommentEntry_moreMenuBtn_sPGif:hover,
 .PostListHeader_unsubscribed_2NIAB:hover,
 .PostListHeader_subscribed_2bTED:hover {
@@ -244,6 +247,7 @@ a:hover {
 .PostBar_moreMenuButtonSubscribe_32ujb,
 .PostBar_moreMenuButtonReply_hh96E,
 .PostBar_moreMenuButtonReport_2W-yf,
+.PostBar_moreMenuButtonEmbed_39URI,
 .CommentEntry_moreMenuBtn_sPGif {
     color: #ddd;
 }
@@ -368,30 +372,27 @@ textarea,
     background-color: #4A575F;
 }
 .PostList_entry_1rq5L {
-	background-color: #37474F;
-    border-color: #263238;
+    border-color: #aaa;
 }
 .PostList_entry_1rq5L:hover {
-    background-color: #4A575F;
+    background-color: #37474F;
+}
+.PostEntry_pinned_2AouY {
+    background-color: rgba(255,255,255,.15);
 }
 
 /* Text */
-.PostEntry_title_t1BVP,
 .PostAuthorHeader_large_14BBC .PostAuthorHeader_author_320Uv,
 .PostAuthorHeader_large_niQ5f .PostAuthorHeader_author_3O30x,
-.PostEntry_title_H5o4d {
+.PostEntry_title_H5o4d,
+.PostEntry_forum_1m8nJ {
     color: #ddd;
+    opacity: .95;
 }
-.PostEntry_titleUnread_ycJL0,
 .PostEntry_title_H5o4d.PostEntry_unread_2U217 {
     color: #7EBCFF;
 }
-.PostEntry_forum_3OvOh {
-	color: #888;
-    border-color: #888;
-}
 .PostEntry_forum_1m8nJ,
-.PostEntry_pinned_2AouY,
 .PostEntry_published_229om {
 	opacity: .8;
 }
@@ -429,16 +430,24 @@ textarea,
 .Like_counter_1enlP {
 	color: #ddd;
 }
-.Like_root_3buBT.Like_clickable_nOA6Y:hover:not(.Like_liked_3LkBP) .Like_heart_1rPPX {
-    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.15" /><feFuncG type="linear" slope="=1.15" /><feFuncB type="linear" slope="1.15" /></feComponentTransfer></filter></svg>#filter');
-    -webkit-filter: brightness(115%);
-    filter: brightness(115%);
+.Like_heart_1rPPX > svg > g > g  {
+    fill: rgba(255, 255, 255, 0.45);
+}
+.Like_root_3buBT.Like_clickable_nOA6Y:hover > .Like_heart_1rPPX > svg > g > g  {
+    fill: rgba(255, 255, 255, 0.65);
 }
 .PostEntry_collect_2MUL3 {
     color: rgba(255,255,255,.3);
 }
 .PostEntry_collect_2MUL3:before {
 	background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0i5ZyW5bGkXzEiIGRhdGEtbmFtZT0i5ZyW5bGkIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEyIDE2Ij48ZGVmcz48c3R5bGU+LmNscy0xe29wYWNpdHk6LjQ1fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5ub3JtYWw8L3RpdGxlPjxnIGlkPSJTeW1ib2xzIiBjbGFzcz0iY2xzLTEiPjxnIGlkPSLkuIDoiKznnIvmnb/mlofnq6Dmop3nm65f5Lul5paH54K66YeNLWNvcHkiIGRhdGEtbmFtZT0i5LiA6Iis55yL5p2/5paH56ug5qKd55uuIOS7peaWh+eCuumHjS1jb3B5Ij48ZyBpZD0iR3JvdXAtMTEiPjxnIGlkPSJHcm91cC0yMiI+PGcgaWQ9Ikdyb3VwLV8tR3JvdXAtQ29weS00IiBkYXRhLW5hbWU9Ikdyb3VwLSstR3JvdXAtQ29weS00Ij48ZyBpZD0iR3JvdXAtMjEiPjxnIGlkPSJHcm91cC1Db3B5LTQiPjxwYXRoIGlkPSJGaWxsLTEiIGZpbGw9IiNGRkZGRkYiIGQ9Ik05LjYgMEgyLjRBMi4yOCAyLjI4IDAgMCAwIDAgMi4xNHYxMi43OWExLjIyIDEuMjIgMCAwIDAgMiAuODRsNC0yLjkgNC4wNSAyLjlhMS4yMiAxLjIyIDAgMCAwIDEuOTUtLjg0VjIuMTRBMi4yOCAyLjI4IDAgMCAwIDkuNiAwIi8+PC9nPjwvZz48L2c+PC9nPjwvZz48L2c+PC9nPjwvc3ZnPg==);
+}
+.PostEntry_collect_2MUL3.PostEntry_active_1Di7Q:before {
+    filter: brightness(150%);
+    -webkit-filter: brightness(150%);
+    -moz-filter: brightness(150%);
+    -ms-filter: brightness(150%);
+    -o-filter: brightness(150%);
 }
 .PostEntry_collect_2MUL3.PostEntry_clickable_1io_k:hover:not(.PostEntry_active_1Di7Q):before {
     background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0i5ZyW5bGkXzEiIGRhdGEtbmFtZT0i5ZyW5bGkIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEyIDE2Ij48ZGVmcz48c3R5bGU+LmNscy0xe29wYWNpdHk6LjZ9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmhvdmVyPC90aXRsZT48ZyBpZD0iU3ltYm9scyIgY2xhc3M9ImNscy0xIj48ZyBpZD0i5LiA6Iis55yL5p2/5paH56ug5qKd55uuX+S7peaWh+eCuumHjS1jb3B5IiBkYXRhLW5hbWU9IuS4gOiIrOeci+adv+aWh+eroOaineebriDku6Xmlofngrrph40tY29weSI+PGcgaWQ9Ikdyb3VwLTExIj48ZyBpZD0iR3JvdXAtMjIiPjxnIGlkPSJHcm91cC1fLUdyb3VwLUNvcHktNCIgZGF0YS1uYW1lPSJHcm91cC0rLUdyb3VwLUNvcHktNCI+PGcgaWQ9Ikdyb3VwLTIxIj48ZyBpZD0iR3JvdXAtQ29weS00Ij48cGF0aCBpZD0iRmlsbC0xIiBmaWxsPSIjRkZGRkZGIiBkPSJNOS42IDBIMi40QTIuMjggMi4yOCAwIDAgMCAwIDIuMTR2MTIuNzlhMS4yMiAxLjIyIDAgMCAwIDIgLjg0bDQtMi45IDQuMDUgMi45YTEuMjIgMS4yMiAwIDAgMCAxLjk1LS44NFYyLjE0QTIuMjggMi4yOCAwIDAgMCA5LjYgMCIvPjwvZz48L2c+PC9nPjwvZz48L2c+PC9nPjwvZz48L3N2Zz4=);
@@ -451,7 +460,8 @@ textarea,
 }
 
 /* Search */
-.SearchHeader_fixed_3VvsE {
+.SearchHeader_fixed_3VvsE,
+.SearchHeader_root_2LuCL {
     background-color: #263238;
 }
 .SearchForm_input_3u6iB {
@@ -544,7 +554,9 @@ textarea,
 .CommentModal_modal_19jFs,
 .PostNotFound_container_3DXoc,
 .PostPage_footer_3-HVC,
-.PostNotFound_modalContainer_h-lfO {
+.PostNotFound_modalContainer_h-lfO,
+.Post_root_23_VR,
+.PostHeader_fixed_osL6L {
     background-color: #263238;
 }
 
@@ -601,7 +613,7 @@ textarea,
     border-color: #263238;
 }
 .PostBar_moreMenuContainer_xGZv- {
-    background-color: #263238;
+    background-color: #384248;
 }
 
 /* Darsys Post List */
@@ -683,6 +695,9 @@ textarea,
 }
 .PostEntry_reply_1FKC0:before {
 	background: #384248;
+}
+.PostEntry_reply_1oU-6:before {
+	background-color: #fff;
 }
 .PostReplyBox_desc_1OolE {
     color: #aaa;
@@ -931,17 +946,19 @@ textarea,
 .MyConfigPage_container_29RN2,
 .MyConfigPage_formContainer_mFOW9,
 .MyPage_body_52CXY,
+.MyPage_footer_1qh-T,
 .MyAvatar_name_1iAo4,
-.MyConfigPage_root_1J2b- {
+.MyConfigPage_root_1J2b-,
+.MyHeader_sticky_3cqjt.MyHeader_fixed_1JIhx {
     background: #212121 !important;
     color: #ccc;
 }
-.MyPage_postListContainer_1gITo,
 .PhotoCropper_content_IN4JC,
 .UpdateNameForm_form_2s-g2,
 .UpdateDepartmentForm_form_1Aqx1,
 .UpdateBirthdayForm_form_37Jzs,
-.PrimaryEmailForm_root_3tfGp {
+.PrimaryEmailForm_root_3tfGp,
+.PostList_compact_3_9nZ {
     background-color: #263238;
 }
 .FirstStageSchoolList_container_2XzjC {
@@ -972,7 +989,8 @@ textarea,
 .PrimaryEmailForm_notice_2TW5W  {
 	color: #ddd;
 }
-.MyConfigPage_emailActivated_2sKyA {
+.MyConfigPage_emailActivated_2sKyA,
+.MyHeader_stickyMe_1D3Fn .MyHeader_name_2Q_Bf {
 	color: #ccc;
 }
 
@@ -982,6 +1000,9 @@ textarea,
 }
 .PasswordValidationForm_formBox_3f_uA {
     border-color: #333;
+}
+.PostList_compact_3_9nZ {
+    border-color: #aaa #333;
 }
 
 /* SideBar */
@@ -1009,18 +1030,20 @@ textarea,
 /* Background */
 .PersonaFacade_root_2Z0b4,
 .PersonaFacade_header_1YpMj,
-.PersonaFacade_container_3QI5X {
+.PersonaFacade_container_3QI5X,
+.PersonaFacade_postListContainer_4Q0aJ {
 	background: #212121 !important;
     color: #ccc;
 }
-.PersonaFacade_postListContainer_4Q0aJ > div,
 .NicknameForm_container_2nW87,
 .UidRegulation_root_3uBuo,
-.UidRegulation_description_V8OQl {
+.UidRegulation_description_V8OQl,
+.UidForm_root_2EpHC {
     background-color: #263238 !important;
 }
 .PersonaFacade_promotionTitle_5UIPr,
-.UidRegulation_description_V8OQl {
+.UidRegulation_description_V8OQl,
+.UidForm_title_714p6 {
 	color: #ddd;
 }
 
@@ -1030,10 +1053,10 @@ textarea,
 }
 
 /* Balloon */
-.Balloon_content_1HhKv {
+.Balloon_light_1jEdB .Balloon_content_51YBL {
     background-color: #212121;
 }
-.Balloon_triangle_21kcz:after {
+.Balloon_light_1jEdB .Balloon_triangle_18pT1:after {
     border-color: transparent transparent #212121 #212121;
 }
 
@@ -1147,7 +1170,8 @@ textarea,
 .Radio_formLabel_3rohx,
 .FirstSchoolEmailCheck_description_al2IP,
 .PhoneValidationForm_subtitle_3f6cA,
-.EmailResendModal_container_3GyPC {
+.EmailResendModal_container_3GyPC,
+.EmailActivatedPage_description_28O2Q {
     color: #ddd;
 }
 
