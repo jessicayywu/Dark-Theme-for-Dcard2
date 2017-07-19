@@ -18,13 +18,13 @@
 		|_|  |___||_|    |____/ |___||___||__,||_|  |___|
 
 		User ID: 118195
-		Updated: 2017/07/19
+		Updated: 2017/07/20
 		
 		Old:
 		https://www.dcard.tw/f/dcard/p/1145060
 		https://userstyles.org/styles/124504/dark-theme-for-dcard
 
-		Version: 3.1415926535897932384626433832795
+		Version: 3.14159265358979323846264338327950
 		https://www.dcard.tw/f/dcard/p/224044083
 		https://userstyles.org/styles/128046/dark-theme-for-dcard2
 
@@ -99,7 +99,9 @@ a:hover {
 /* ---------------------Buttons--------------------- */
 .Button_primary_3KkkP,
 .PostListHeader_subscribeBtn_xCIzl:hover,
-.Button_short_21JvO {
+.Button_short_21JvO,
+.PostListHeader_subscribed_2bTED:hover,
+.PostSubscriptionBox_subscribed_JOPVt {
     color: #eee;
     background-color: #7EBCFF;
     border-color: #333;
@@ -109,9 +111,13 @@ a:hover {
 .Button_primary_3KkkP:focus,
 .Button_short_21JvO:active,
 .Button_short_21JvO:hover,
-.Button_short_21JvO:focus {
+.Button_short_21JvO:focus,
+.PostSubscriptionBox_subscribed_JOPVt:hover {
     color: #eee;
     background-color: #76B0EE;
+    border-color: #333;
+}
+.Button_default_2OR3d {
     border-color: #333;
 }
 .Button_success_ywKfr {
@@ -240,8 +246,7 @@ a:hover {
 .PostBar_moreMenuButtonReport_2W-yf:hover,
 .PostBar_moreMenuButtonEmbed_39URI:hover,
 .CommentEntry_moreMenuBtn_sPGif:hover,
-.PostListHeader_unsubscribed_2NIAB:hover,
-.PostListHeader_subscribed_2bTED:hover {
+.PostListHeader_unsubscribed_2NIAB:hover {
     background-color: rgba(64, 196, 255, .1) !important;
 }
 .PostBar_moreMenuButtonSubscribe_32ujb,
@@ -250,6 +255,14 @@ a:hover {
 .PostBar_moreMenuButtonEmbed_39URI,
 .CommentEntry_moreMenuBtn_sPGif {
     color: #ddd;
+}
+.PostListHeader_subscribed_2bTED {
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+aWNfdGlja18zMzk3Y2Y8L3RpdGxlPjxwYXRoIGQ9Ik0xIDUuNDNsMy42NSA0LjI0OEwxMS40MTUgMSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2U9IiM3RUJDRkYiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==) no-repeat;
+    background-position: 6px 7px;
+    background-size: 10px;
+}
+.FollowingEntry_subscribed_1yNKo {
+	background-color: #fff;
 }
 
 /* ---------------------Form--------------------- */
@@ -364,11 +377,13 @@ textarea,
 .PersonaEntry_wrapper_3q3aW:hover {
     background-color: #4A575F;
 }
-.PostListPage_subcategory_2MAdv {
+.PostListPage_subcategory_2MAdv,
+.FollowingUpdatedList_entry_hT1UN {
     background-color: #37474F;
-    border-color: #263238;
+    border-color: #263238!important;
 }
-.PostListPage_subcategory_2MAdv:hover {
+.PostListPage_subcategory_2MAdv:hover,
+.FollowingUpdatedList_entry_hT1UN:hover {
     background-color: #4A575F;
 }
 .PostList_entry_1rq5L {
@@ -399,14 +414,18 @@ textarea,
 .PostEntry_forum_1m8nJ:hover {
     opacity: .95;
 }
-.PostEntry_excerpt_2eHlN {
+.PostEntry_excerpt_2eHlN,
+.FollowingUpdatedEntry_description_21k5-,
+.FollowingUpdatedEntry_nickname_U93AB {
     color: #ccc;
 }
 .PostEntry_author_38yft,
 .PersonaEntry_uid_3zzK1,
 .PersonaEntry_postCount_12Bky,
 .PostAuthorHeader_container_3OvMq,
-.PostAuthor_root_3vAJf {
+.PostAuthor_root_3vAJf,
+.PostListPage_followingListTitle_3VqKa,
+.PostEntry_comment_18ty5 {
 	color: #ddd;
 }
 .PostAuthorHeader_container_1HIAg.PostAuthorHeader_tiny_20MBV .PostAuthorHeader_author_3O30x ,
@@ -415,9 +434,6 @@ textarea,
 }
 .PostEntry_picture_1d7uX .PostEntry_image_1E6Mi {
 	border-color: #384248;
-}
-.PostEntry_comment_18ty5 {
-    color: #ddd;
 }
 .PostEntry_commentUnread_1cVyd {
     color: #7EBCFF;
@@ -430,10 +446,10 @@ textarea,
 .Like_counter_1enlP {
 	color: #ddd;
 }
-.Like_heart_1rPPX > svg > g > g  {
+.Like_root_3buBT:not(.undefined).Like_clickable_nOA6Y > .Like_heart_1rPPX > svg > g > g  {
     fill: rgba(255, 255, 255, 0.45);
 }
-.Like_root_3buBT.Like_clickable_nOA6Y:hover > .Like_heart_1rPPX > svg > g > g  {
+.Like_root_3buBT:not(.undefined).Like_clickable_nOA6Y:hover > .Like_heart_1rPPX > svg > g > g  {
     fill: rgba(255, 255, 255, 0.65);
 }
 .PostEntry_collect_2MUL3 {
@@ -958,7 +974,8 @@ textarea,
 .UpdateDepartmentForm_form_1Aqx1,
 .UpdateBirthdayForm_form_37Jzs,
 .PrimaryEmailForm_root_3tfGp,
-.PostList_compact_3_9nZ {
+.PostList_compact_3_9nZ,
+.FollowingList_entry_2nXhE {
     background-color: #263238;
 }
 .FirstStageSchoolList_container_2XzjC {
@@ -980,13 +997,17 @@ textarea,
 .MyPage_postListContainer_1gITo > div {
     background: none !important;
 }
+.FollowingList_entry_2nXhE:hover {
+	background-color: #37474F;
+}
 
 /* Text */
 .PrimaryEmailForm_title_1qtLb {
 	color: #eee;
 }
 .PrimaryEmailForm_description_24p_Q,
-.PrimaryEmailForm_notice_2TW5W  {
+.PrimaryEmailForm_notice_2TW5W,
+.FollowingEntry_detail_2nkC9 {
 	color: #ddd;
 }
 .MyConfigPage_emailActivated_2sKyA,
@@ -1001,7 +1022,8 @@ textarea,
 .MyHeader_container_3MneW {
     border-bottom: 1px solid #333;
 }
-.PasswordValidationForm_formBox_3f_uA {
+.PasswordValidationForm_formBox_3f_uA,
+.FollowingList_entry_2nXhE {
     border-color: #333;
 }
 .PostList_compact_3_9nZ {
@@ -1058,10 +1080,17 @@ textarea,
 
 /* Balloon */
 .Balloon_light_1jEdB .Balloon_content_51YBL {
-    background-color: #212121;
+    background-color: #384248;
 }
 .Balloon_light_1jEdB .Balloon_triangle_18pT1:after {
-    border-color: transparent transparent #212121 #212121;
+    border-color: transparent transparent #384248 #384248;
+}
+.SubscribeButton_dropdown_lw2Np {
+    color: #ccc;
+}
+.StylishCheckBox_root_3TFre.StylishCheckBox_checked_2jklE {
+    background-color: #7ebcff;
+    border: 1px solid #7ebcff;
 }
 
 /* ---------------------Notification--------------------- */

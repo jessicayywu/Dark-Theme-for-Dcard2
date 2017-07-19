@@ -51,6 +51,7 @@ https://www.dcard.tw/f/dcard/p/224044083
 <li>ver. 3.14159265358979323846264338327 - 2017/06/24 Add Add-Ons: Hide Picture Preview; Fix: Color of Persona List</li>
 <li>ver. 3.141592653589793238462643383279 - 2017/07/18 Add & Fix: A LOT!!!</li>
 <li>ver. 3.1415926535897932384626433832795 - 2017/07/19 Fix: Some colors</li>
+<li>ver. 3.14159265358979323846264338327950 - 2017/07/20 Fix: Subscription</li>
 </ul>
 
 
