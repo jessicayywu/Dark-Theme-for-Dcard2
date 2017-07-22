@@ -18,13 +18,13 @@
 		|_|  |___||_|    |____/ |___||___||__,||_|  |___|
 
 		User ID: 118195
-		Updated: 2017/07/22
+		Updated: 2017/07/23
 		
 		Old:
 		https://www.dcard.tw/f/dcard/p/1145060
 		https://userstyles.org/styles/124504/dark-theme-for-dcard
 
-		Version: 3.141592653589793238462643383279502
+		Version: 3.1415926535897932384626433832795028
 		https://www.dcard.tw/f/dcard/p/224044083
 		https://userstyles.org/styles/128046/dark-theme-for-dcard2
 
@@ -370,7 +370,8 @@ textarea,
 .SearchPage_loadingBlock_G-QDe {
 	display: none;
 }
-.PostListHeader_header_2KjhK {
+.PostListHeader_header_2KjhK,
+.PersonaFollowingUpdatedPage_header_2kS0R {
     background-color: #263238;
 }
 .PostEntry_entry_2rsgm:hover,
@@ -404,7 +405,8 @@ textarea,
     color: #ddd;
     opacity: .95;
 }
-.PostEntry_title_H5o4d.PostEntry_unread_2U217 {
+.PostEntry_title_H5o4d.PostEntry_unread_2U217,
+.PersonaFollowingUpdatedPage_title_lUvXC {
     color: #7EBCFF;
 }
 .PostEntry_forum_1m8nJ,
