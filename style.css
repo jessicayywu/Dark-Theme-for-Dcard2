@@ -18,13 +18,13 @@
 		|_|  |___||_|    |____/ |___||___||__,||_|  |___|
 
 		User ID: 118195
-		Updated: 2017/07/20
+		Updated: 2017/07/22
 		
 		Old:
 		https://www.dcard.tw/f/dcard/p/1145060
 		https://userstyles.org/styles/124504/dark-theme-for-dcard
 
-		Version: 3.14159265358979323846264338327950
+		Version: 3.141592653589793238462643383279502
 		https://www.dcard.tw/f/dcard/p/224044083
 		https://userstyles.org/styles/128046/dark-theme-for-dcard2
 
@@ -975,7 +975,8 @@ textarea,
 .UpdateBirthdayForm_form_37Jzs,
 .PrimaryEmailForm_root_3tfGp,
 .PostList_compact_3_9nZ,
-.FollowingList_entry_2nXhE {
+.FollowingList_entry_2nXhE,
+.MyPage_modalContainer_1-8bb {
     background-color: #263238;
 }
 .FirstStageSchoolList_container_2XzjC {
@@ -1000,14 +1001,19 @@ textarea,
 .FollowingList_entry_2nXhE:hover {
 	background-color: #37474F;
 }
+.FollowingEntry_halo_FInOp {
+    background-image: linear-gradient(142deg,rgba(50, 191, 251, 0.8),rgba(255, 59, 125, 0.8));
+}
 
 /* Text */
-.PrimaryEmailForm_title_1qtLb {
+.PrimaryEmailForm_title_1qtLb,
+.MyPage_modalContainer_1-8bb .MyPage_modalTitle_8bI3k {
 	color: #eee;
 }
 .PrimaryEmailForm_description_24p_Q,
 .PrimaryEmailForm_notice_2TW5W,
-.FollowingEntry_detail_2nkC9 {
+.FollowingEntry_detail_2nkC9,
+.MyPage_modalContainer_1-8bb .MyPage_modalContent_38T0v {
 	color: #ddd;
 }
 .MyConfigPage_emailActivated_2sKyA,
