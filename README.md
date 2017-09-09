@@ -54,6 +54,7 @@ https://www.dcard.tw/f/dcard/p/224044083
 <li>ver. 3.14159265358979323846264338327950 - 2017/07/20 Fix: Subscription</li>
 <li>ver. 3.141592653589793238462643383279502 - 2017/07/22 Fix: Modal Container, Following Entry</li>
 <li>ver. 3.1415926535897932384626433832795028 - 2017/07/23 Fix: Following Update Page</li>
+<li>ver. 3.14159265358979323846264338327950288 - 2017/09/09 Fix: Background of Comment Modal</li>
 </ul>
 
 
