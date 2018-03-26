@@ -1,5 +1,5 @@
 ﻿@-moz-document domain("dcard.tw") {
-/* ========================================================================
+/*  ========================================================================
 		 ██████╗  █████╗ ██████╗ ██╗  ██╗            
 		 ██╔══██╗██╔══██╗██╔══██╗██║ ██╔╝            
 		 ██║  ██║███████║██████╔╝█████╔╝             
@@ -18,13 +18,13 @@
 		|_|  |___||_|    |____/ |___||___||__,||_|  |___|
 
 		User ID: 118195
-		Updated: 2017/09/09
+		Updated: 2018/03/27
 		
 		Old:
 		https://www.dcard.tw/f/dcard/p/1145060
 		https://userstyles.org/styles/124504/dark-theme-for-dcard
 
-		Version: 3.14159265358979323846264338327950288
+		Version: 3.141592653589793238462643383279502884
 		https://www.dcard.tw/f/dcard/p/224044083
 		https://userstyles.org/styles/128046/dark-theme-for-dcard2
 
@@ -556,6 +556,16 @@ textarea,
 .TrendingTags_entry_1KT2q:hover {
 	background: #333;
 	color: #eee;
+}
+
+/* ---------------------Topic--------------------- */
+.TopicList_entry_3-OmN { 
+    background-color: #37474F;
+}
+
+.TopicList_entry_3-OmN:hover { 
+    background-color: #37474F;
+    background-color: #4A575F;
 }
 
 /* ---------------------Article--------------------- */
@@ -1220,7 +1230,8 @@ textarea,
 
 /* ---------------------AD--------------------- */
 .ForumListPage_ad_2AWkO,
-.adsbygoogle {
+.adsbygoogle,
+.ForumAdContainer_ad_OhhTY {
 	filter: grayscale(100%);
     filter: gray;
 	-webkit-filter: grayscale(100%);
