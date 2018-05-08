@@ -18,13 +18,13 @@
 		|_|  |___||_|    |____/ |___||___||__,||_|  |___|
 
 		User ID: 118195
-		Updated: 2018/03/27
+		Updated: 2018/05/09
 		
 		Old:
 		https://www.dcard.tw/f/dcard/p/1145060
 		https://userstyles.org/styles/124504/dark-theme-for-dcard
 
-		Version: 3.141592653589793238462643383279502884
+		Version: 3.1415926535897932384626433832795028841
 		https://www.dcard.tw/f/dcard/p/224044083
 		https://userstyles.org/styles/128046/dark-theme-for-dcard2
 
@@ -267,7 +267,8 @@ a:hover {
 
 /* ---------------------Form--------------------- */
 .PostForm_form_jqK_U,
-.PostForm_nav_3WuYm {
+.PostForm_nav_3WuYm,
+.PostEditPage_root_3swqu {
     background-color: #263238;
 }
 .PostForm_forumSelectBtn_1LoQb {
@@ -341,6 +342,18 @@ textarea,
 .dialog {
     color: #aaa !important;
 }
+
+/* Topic */
+.TopicForm_root_1en1f {
+    background-color: #263238;
+}
+.TopicForm_title_3dkys {
+    color: #ccc;
+}
+.Suggestions_root_JSgdz {
+    color: #aaa;
+}
+
 /* Counter */
 .PostListHeader_draftCounter_2MsxX {
     background-color: #FF6969;
@@ -780,22 +793,22 @@ textarea,
 	background: #37474F;
 }
 /* Comment Loading */
-.CommentModal_container_1ve_Z,
-.CommentModal_header_3jT5p .CommentModal_avatarContainer_KSg2k,
-.CommentModal_header_3jT5p .CommentModal_forumContainer_2mRfm,
-.CommentModal_header_3jT5p .CommentModal_info_TmfIv .CommentModal_separator_3NQ0M,
-.CommentModal_header_3jT5p .CommentModal_info_TmfIv .CommentModal_timeContainer_2HccJ .CommentModal_timeMask_22tmM,
-.CommentModal_headerBottomMask_37Quy,
-.CommentModal_contentSeparator_3i_Sp,
-.CommentModal_contentContainer_1iJDR div,
-.CommentModal_header_3jT5p .CommentModal_info_TmfIv .CommentModal_authorContainer_3zg2q .CommentModal_authorMask_3uQOa {
+.CommentModal_container_1alka,
+.CommentModal_header_212Oq .CommentModal_avatarContainer_3srh9,
+.CommentModal_header_212Oq .CommentModal_forumContainer_MBdD2,
+.CommentModal_header_212Oq .CommentModal_info_3STEQ .CommentModal_separator_3eFH0,
+.CommentModal_header_212Oq .CommentModal_info_3STEQ .CommentModal_timeContainer_Uto55 .CommentModal_timeMask_2kJMR,
+.CommentModal_headerBottomMask_OFBxV,
+.CommentModal_contentSeparator_1EPHQ,
+.CommentModal_contentContainer_3-kMy div,
+.CommentModal_header_212Oq .CommentModal_info_3STEQ .CommentModal_authorContainer_2hquv .CommentModal_authorMask_JlSju {
     background: #263238;
 }
-.CommentModal_header_3jT5p .CommentModal_avatarContainer_KSg2k .CommentModal_avatar_YfSDG,
-.CommentModal_header_3jT5p .CommentModal_forumContainer_2mRfm .CommentModal_forum_3KlWP {
+.CommentModal_header_212Oq .CommentModal_avatarContainer_3srh9 .CommentModal_avatar_1sN6A,
+.CommentModal_header_212Oq .CommentModal_forumContainer_MBdD2 .CommentModal_forum_VmFgf {
 	background: #37474F;
 }
-.CommentModal_wrapper_3XKp7 {
+.CommentModal_wrapper_22Y-f {
     background-color: #37474F;
     background-image: -webkit-linear-gradient(left,#37474F,#384248 20%,#263238 40%,#37474F);
     background-image: linear-gradient(90deg,#37474F,#384248 20%,#263238 40%,#37474F);
