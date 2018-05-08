@@ -24,7 +24,7 @@
 		https://www.dcard.tw/f/dcard/p/1145060
 		https://userstyles.org/styles/124504/dark-theme-for-dcard
 
-		Version: 3.1415926535897932384626433832795028841
+		Version: 3.14159265358979323846264338327950288419
 		https://www.dcard.tw/f/dcard/p/224044083
 		https://userstyles.org/styles/128046/dark-theme-for-dcard2
 
@@ -89,7 +89,8 @@ a:hover {
 .PostListPage_container_1pCTr,
 .SearchEmpty_container_1M2kr,
 .SearchPage_container_2CErH,
-.PersonaSearchPage_container_lPOlj {
+.PersonaSearchPage_container_lPOlj,
+.TopicPostListPage_container_39QfX {
     background-color: #263238;
 }
 .Toast_toast_2vX3o {
@@ -440,11 +441,14 @@ textarea,
 .PostAuthorHeader_container_3OvMq,
 .PostAuthor_root_3vAJf,
 .PostListPage_followingListTitle_3VqKa,
-.PostEntry_comment_18ty5 {
+.PostEntry_comment_18ty5,
+.TopicPostListHeader_title_2IS5J,
+.TopicPostListHeader_subtitle_D3XCb {
 	color: #ddd;
 }
 .PostAuthorHeader_container_1HIAg.PostAuthorHeader_tiny_20MBV .PostAuthorHeader_author_3O30x ,
-.PostAuthorHeader_container_1HIAg.PostAuthorHeader_small_279Md .PostAuthorHeader_author_3O30x {
+.PostAuthorHeader_container_1HIAg.PostAuthorHeader_small_279Md .PostAuthorHeader_author_3O30x,
+.TopicPostListHeader_subtitle_D3XCb {
 	opacity: .85;
 }
 .PostEntry_picture_1d7uX .PostEntry_image_1E6Mi {
