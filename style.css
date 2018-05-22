@@ -18,13 +18,13 @@
 		|_|  |___||_|    |____/ |___||___||__,||_|  |___|
 
 		User ID: 118195
-		Updated: 2018/05/09
+		Updated: 2018/05/23
 		
 		Old:
 		https://www.dcard.tw/f/dcard/p/1145060
 		https://userstyles.org/styles/124504/dark-theme-for-dcard
 
-		Version: 3.14159265358979323846264338327950288419
+		Version: 3.141592653589793238462643383279502884197
 		https://www.dcard.tw/f/dcard/p/224044083
 		https://userstyles.org/styles/128046/dark-theme-for-dcard2
 
@@ -345,14 +345,17 @@ textarea,
 }
 
 /* Topic */
-.TopicForm_root_1en1f {
+.PopupModal_root_11mQj {
     background-color: #263238;
 }
-.TopicForm_title_3dkys {
+.TopicForm_title_1DtEl {
     color: #ccc;
 }
 .Suggestions_root_JSgdz {
     color: #aaa;
+}
+.TopicInput_empty_24zpH {
+    color: rgba(255,255,255,.45);
 }
 
 /* Counter */
@@ -576,13 +579,31 @@ textarea,
 }
 
 /* ---------------------Topic--------------------- */
-.TopicList_entry_3-OmN { 
+/* Color */
+.TopicList_entry_3mTbB { 
     background-color: #37474F;
 }
 
 .TopicList_entry_3-OmN:hover { 
     background-color: #37474F;
     background-color: #4A575F;
+}
+
+/* Scrollbar */
+.PostListPage_topicListWrapper_Iw1Na::-webkit-scrollbar {
+    height: 6px;
+}
+.PostListPage_topicListWrapper_Iw1Na::-webkit-scrollbar-track {
+    opacity: 1;
+}
+.PostListPage_topicListWrapper_Iw1Na::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0);
+    transform: translateX(93px);
+    border-radius: 3px;
+    transition: opacity 500ms;
+}
+.PostListPage_topicListWrapper_Iw1Na::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* ---------------------Article--------------------- */

@@ -58,6 +58,7 @@ https://www.dcard.tw/f/dcard/p/224044083
 <li>ver. 3.141592653589793238462643383279502884 - 2018/03/27 Add: Topic List; Fix: Grayscale Ads</li>
 <li>ver. 3.1415926535897932384626433832795028841 - 2018/05/09 Add: Topic Form; Fix: Post Form, Comment Modal</li>
 <li>ver. 3.14159265358979323846264338327950288419 - 2018/05/09 Add: Topic Search</li>
+<li>ver. 3.141592653589793238462643383279502884197 - 2018/05/23 Fix: Topic Popup; Add: Scrollbar of Topic List</li>
 </ul>
 
 
