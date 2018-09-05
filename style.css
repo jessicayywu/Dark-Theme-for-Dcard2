@@ -18,13 +18,13 @@
 		|_|  |___||_|    |____/ |___||___||__,||_|  |___|
 
 		User ID: 118195
-		Updated: 2018/05/23
+		Updated: 2018/09/06
 		
 		Old:
 		https://www.dcard.tw/f/dcard/p/1145060
 		https://userstyles.org/styles/124504/dark-theme-for-dcard
 
-		Version: 3.141592653589793238462643383279502884197
+		Version: 3.1415926535897932384626433832795028841971
 		https://www.dcard.tw/f/dcard/p/224044083
 		https://userstyles.org/styles/128046/dark-theme-for-dcard2
 
@@ -33,7 +33,7 @@
 /* --------------------------Body--------------------- */
 body,
 .ForumListPage_body_2FYgZ,
-.MyHeader_container_3MneW {
+.MyHeader_container_1f2Dv {
     background: #212121 !important;
     color: #ccc;
 }
@@ -446,7 +446,9 @@ textarea,
 .PostListPage_followingListTitle_3VqKa,
 .PostEntry_comment_18ty5,
 .TopicPostListHeader_title_2IS5J,
-.TopicPostListHeader_subtitle_D3XCb {
+.TopicPostListHeader_subtitle_D3XCb,
+.TopicSubscriptionList_meta_2N-Ry,
+.TopicSubscriptionList_title_9xQWT {
 	color: #ddd;
 }
 .PostAuthorHeader_container_1HIAg.PostAuthorHeader_tiny_20MBV .PostAuthorHeader_author_3O30x ,
@@ -525,12 +527,14 @@ textarea,
 .PersonaList_entry_23pu6,
 .PersonaList_list_3VyZy,
 .ForumSearchList_entry_2MdYq,
-.ForumSearchList_list_TIFvP {
+.ForumSearchList_list_TIFvP,
+.SearchPage_resultBox_1Zsg0 {
     background-color: #37474F;
     border-color: #263238;
 }
 .PersonaList_entry_23pu6:hover,
-.ForumSearchList_entry_2MdYq:hover {
+.ForumSearchList_entry_2MdYq:hover,
+.SearchPage_resultBox_1Zsg0:hover {
     background-color: #4A575F;
 }
 .ForumSearchEntry_button_IAyCb:hover {
@@ -545,6 +549,10 @@ textarea,
 }
 .PersonaList_footer_cAsWw {
     color: rgba(255,255,255,.6);
+}
+.SearchPage_resultBox_1Zsg0>h5,
+.SearchPage_title_2teW1 {
+	color: rgba(255,255,255,.4);
 }
 
 .PopupModal_container_zeuvz {
@@ -785,7 +793,8 @@ textarea,
 
 /* Post Loading */
 .PostLoading_wrapper_-HHCj,
-.PostEntryLoading_loadingBlock_13nhQ {
+.PostEntryLoading_loadingBlock_13nhQ,
+.LoadingCard_loadingBlock_1A_a5 {
     background-color: #37474F;
     background-image: -webkit-linear-gradient(left,#37474F,#384248 20%,#263238 40%,#37474F);
     background-image: linear-gradient(90deg,#37474F,#384248 20%,#263238 40%,#37474F);
@@ -808,7 +817,15 @@ textarea,
 .PostEntryLoading_loadingMaskTitle_1VzkN,
 .PostEntryLoading_loadingMaskExcerpt_1JH5U, 
 .PostEntryLoading_loadingMaskSep3_1ZrkP,
-.PostEntryLoading_loadingMaskFooter_3Vrab {
+.PostEntryLoading_loadingMaskFooter_3Vrab,
+.LoadingCard_loadingContainer_1vv-K,
+.LoadingCard_loadingMaskHeader_LKZNZ,
+.LoadingCard_loadingMaskSep1_iPb4f,
+.LoadingCard_loadingMaskSep2_3w_ug,
+.LoadingCard_loadingMaskTitle_b-Vb3,
+.LoadingCard_loadingMaskExcerpt_1e65e,
+.LoadingCard_loadingMaskSep3_7VUjm,
+.LoadingCard_loadingMaskFooter_16hg- {
 	background: #263238;
 }
 .PostLoading_header_3qiUX .PostLoading_avatarContainer_2UZjm .PostLoading_avatar_QfFI0
@@ -1028,6 +1045,7 @@ textarea,
 .PrimaryEmailForm_root_3tfGp,
 .PostList_compact_3_9nZ,
 .FollowingList_entry_2nXhE,
+.TopicSubscriptionList_entry_U3tt8,
 .MyPage_modalContainer_1-8bb {
     background-color: #263238;
 }
@@ -1050,7 +1068,8 @@ textarea,
 .MyPage_postListContainer_1gITo > div {
     background: none !important;
 }
-.FollowingList_entry_2nXhE:hover {
+.FollowingList_entry_2nXhE:hover,
+.TopicSubscriptionList_entry_U3tt8:hover {
 	background-color: #37474F;
 }
 .FollowingEntry_halo_FInOp {
@@ -1077,11 +1096,12 @@ textarea,
 }
 
 /* Borders */
-.MyHeader_container_3MneW {
+.MyHeader_container_1f2Dv {
     border-bottom: 1px solid #333;
 }
 .PasswordValidationForm_formBox_3f_uA,
-.FollowingList_entry_2nXhE {
+.FollowingList_entry_2nXhE,
+.TopicSubscriptionList_entry_U3tt8 {
     border-color: #333;
 }
 .PostList_compact_3_9nZ {
