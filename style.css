@@ -18,13 +18,13 @@
 		|_|  |___||_|    |____/ |___||___||__,||_|  |___|
 
 		User ID: 118195
-		Updated: 2018/11/01
+		Updated: 2018/11/19
 		
 		Old:
 		https://www.dcard.tw/f/dcard/p/1145060
 		https://userstyles.org/styles/124504/dark-theme-for-dcard
 
-		Version: 3.14159265358979323846264338327950288419716
+		Version: 3.141592653589793238462643383279502884197169
 		https://www.dcard.tw/f/dcard/p/224044083
 		https://userstyles.org/styles/128046/dark-theme-for-dcard2
 
@@ -231,10 +231,6 @@ a:hover {
 .PostBar_collectBtnActive_1iJqN,
 .PostBar_collectBtn_1BNrR,
 .NewMessageHeader_fullScreenBtn_cCNWR,
-.PostBar_moreMenuButtonSubscribe_32ujb,
-.PostBar_moreMenuButtonReply_hh96E,
-.PostBar_moreMenuButtonReport_2W-yf,
-.PostBar_moreMenuButtonEmbed_39URI,
 .CommentEntry_img_2Z9c2 {
     filter: brightness(200%);
     -webkit-filter: brightness(200%);
@@ -242,18 +238,13 @@ a:hover {
     -ms-filter: brightness(200%);
     -o-filter: brightness(200%);
 }
-.PostBar_moreMenuButtonSubscribe_32ujb:hover,
-.PostBar_moreMenuButtonReply_hh96E:hover,
-.PostBar_moreMenuButtonReport_2W-yf:hover,
-.PostBar_moreMenuButtonEmbed_39URI:hover,
+.PostBar__MenuItem-jwmyrh-4:hover,
 .CommentEntry_moreMenuBtn_sPGif:hover,
 .PostListHeader_unsubscribed_2NIAB:hover {
     background-color: rgba(64, 196, 255, .1) !important;
 }
-.PostBar_moreMenuButtonSubscribe_32ujb,
-.PostBar_moreMenuButtonReply_hh96E,
-.PostBar_moreMenuButtonReport_2W-yf,
-.PostBar_moreMenuButtonEmbed_39URI,
+
+.PostBar__MenuItem-jwmyrh-4,
 .CommentEntry_moreMenuBtn_sPGif {
     color: #ddd;
 }
@@ -439,12 +430,11 @@ textarea,
     color: #ccc;
 }
 .PostEntry_author_38yft,
-.PersonaEntry_uid_3zzK1,
-.PersonaEntry_postCount_12Bky,
 .PostAuthorHeader_container_3OvMq,
 .PostAuthor_root_3vAJf,
 .PostListPage_followingListTitle_3VqKa,
 .PostEntry_comment_18ty5,
+.PostEntry__LikeCount-sc-140l15m-0,
 .TopicPostListHeader_title_2IS5J,
 .TopicPostListHeader_subtitle_D3XCb,
 .TopicSubscriptionList_meta_2N-Ry,
@@ -507,7 +497,7 @@ textarea,
     fill: #7EBCFF;
 }
 
-/* Search */
+/* ---------------------Search--------------------- */
 .SearchHeader_fixed_3VvsE,
 .SearchHeader_root_2LuCL {
     background-color: #263238;
@@ -532,12 +522,14 @@ textarea,
 .ForumSearchEntry_forum_3dC33 {
     color: #ddd;
 }
+
+/* General */
 .PersonaList_entry_23pu6,
 .PersonaList_list_3VyZy,
 .ForumSearchList_entry_2MdYq,
 .ForumSearchList_list_TIFvP,
 .SearchPage_resultBox_1Zsg0,
-.TopicList__Main-j2mbsv-0.givXVm {
+.TopicList__Main-j2mbsv-0 {
     background-color: #37474F;
     border-color: #263238;
 }
@@ -558,7 +550,7 @@ textarea,
 }
 .PostList_bottom_3ENZt,
 .PersonaList_footer_cAsWw,
-.TopicList__NoMore-j2mbsv-4.bQkIVg,
+.TopicList__NoMore-j2mbsv-4,
 .ForumSearchList_footer_10P8H {
     color: rgba(255,255,255,.6);
 }
@@ -580,39 +572,46 @@ textarea,
 .PostSubscriptionForm_title_1rCIt {
     color: #eee;
 }
-.PostSubscriptionForm_description_3m0Hs {
+.PostSubscriptionForm_description_3m0Hs,
+.TopicCard__Info-sc-3qgeey-3,
+.PersonaEntry_detail_3aM4b {
     color: #ddd;
 }
 
-.DropdownSelect__TriggerButton-sc-538muv-1.iIHiFx,
-.SearchFilter__RightGroup-sc-1tmhqaq-2.hOftsd,
-.DropdownSelect__TriggerButton-sc-538muv-1.eDQCkR {
+/* Article */
+.DropdownSelect__TriggerButton-sc-538muv-1,
+.SearchFilter__RightGroup-sc-1tmhqaq-2,
+.DropdownSelect__TriggerButton-sc-538muv-1 {
     color: #ddd;
 }
-.iIHiFx:hover,
-.DropdownSelect__TriggerButton-sc-538muv-1.eDQCkR{
+.DropdownSelect__TriggerButton-sc-538muv-1:hover,
+.DropdownSelect__TriggerButton-sc-538muv-1:focus {
     background-color: #384248;
 }
-.Icon__Main-lxtano-0.bkbEUG,
-.Icon__Main-lxtano-0.doBHuF {
+.Icon__Main-lxtano-0,
+.Icon__Main-lxtano-0 {
     fill: #ddd;
 }
-.DropdownSelect__MenuTriangle-sc-538muv-3.fiuAnR:after {
+.Icon__Main-lxtano-0:hover,
+.Icon__Main-lxtano-0:hover {
+    fill: #7EBCFF;
+}
+.DropdownSelect__MenuTriangle-sc-538muv-3:after {
     border-color: #384248;
 }
-.DropdownSelect__MenuContainer-sc-538muv-2.cvHmDi {
+.DropdownSelect__MenuContainer-sc-538muv-2 {
     background-color: #384248;
 }
-.DropdownSelect__Item-sc-538muv-5.hWywQs {
+.DropdownSelect__Item-sc-538muv-5 {
     color: #ddd;
 }
-.DropdownSelect__Item-sc-538muv-5.hWywQs:hover {
+.DropdownSelect__Item-sc-538muv-5:hover {
     background-color: rgba(64, 196, 255, .1);
 }
-.Toggle__Input-xgf4v8-1.bMqQOV:checked ~ span {
+.Toggle__Input-xgf4v8-1:checked ~ span {
     background-color: #7EBCFF;
 }
-.SearchHighlight__Em-sc-1bcou1a-0.kjSfrn {
+.SearchHighlight__Em-sc-1bcou1a-0 {
     color: #ddd;
 }
 
@@ -626,7 +625,7 @@ textarea,
 	background: #212121;
 }
 
-/*Text*/
+/* Text */
 .TrendingPage_hashtag_bpNhG {
 	color: #ccc;
 }
@@ -639,6 +638,9 @@ textarea,
 
 /* ---------------------Topic--------------------- */
 /* Color */
+.TopicPostListHeader_content_3iEXP {
+	background-color: #263238;
+}
 .TopicList_entry_3mTbB { 
     background-color: #37474F;
 }
@@ -646,6 +648,12 @@ textarea,
 .TopicList_entry_3-OmN:hover { 
     background-color: #37474F;
     background-color: #4A575F;
+}
+.TopicPostListHeader_title_3OhOL {
+    color: #7EBCFF
+}
+.TopicPostListHeader_meta_xQuI4 {
+    color: rgba(255, 255, 255, .35);
 }
 
 /* Scrollbar */
@@ -665,6 +673,27 @@ textarea,
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+/* Report */
+.Dropdown_dropdownMenu_24Mc2 {
+	color: #ddd;
+}
+.SubscribeButton_report_Z9FR7 {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMCAwaDQ4djQ4SDB6Ii8+PHBhdGggZD0iTTI0IDRDMTIuOTcyIDQgNCAxMi45NzIgNCAyNGMwIDExLjAyOSA4Ljk3MiAyMCAyMCAyMHMyMC04Ljk3MSAyMC0yMGMwLTExLjAyOC04Ljk3Mi0yMC0yMC0yMHptLS4wNzkgMjdDMjIuMjk4IDMxIDIxIDMyLjI5OSAyMSAzNC4wNTJjMCAxLjU5IDEuMjk4IDIuODkgMi45MjEgMi44OSAxLjcyMSAwIDMuMDItMS4zIDMuMDItMi44OSAwLTEuNzUzLTEuMjk5LTMuMDUyLTMuMDItMy4wNTJ6bTIuMDE0LTIuOTNsLjk0Mi0xNC43NjFBMi4zMDkgMi4zMDkgMCAwIDAgMjQuNTY3IDExSDIzLjMxQTIuMzA4IDIuMzA4IDAgMCAwIDIxIDEzLjMwOWwuOTc0IDE0Ljc2MWgzLjk2eiIgZmlsbD0iI2RkZGRkZCIvPjwvZz48L3N2Zz4=);
+}
+.SubscribeButton_menuitem_17xHe:hover {
+    background-color: rgba(64, 196, 255, .1);
+}
+.TopicReportModal_form_3mWuy {
+    background-color: #263238;
+}
+.TopicReportModal_title_EsWbO {
+    color: #eee;
+}
+.TopicReportModal_content_28mO6 {
+	color: #888;
+}
+
+
 /* ---------------------Article--------------------- */
 /* Background */
 .PostPage_content_1JHbe,
@@ -680,7 +709,7 @@ textarea,
 .CommentModal_innerContainer_aBjAK,
 .CommentModal_root_1NBzH,
 .PostNotFound_container_3DXoc,
-.PostPage_footer_3-HVC,
+.PostPage_footer_2tZxS,
 .PostNotFound_modalContainer_h-lfO,
 .Post_root_23_VR,
 .PostHeader_fixed_osL6L {
@@ -707,6 +736,7 @@ textarea,
 }
 
 /* Reactions */
+.PostFooter__LikeCount-sc-1eucag2-6,
 .PostFooter__CommentCount-sc-1eucag2-1,
 .Reactions__Wrapper-sc-1222jb7-0 {
     color: rgba(255, 255, 255, 0.65);
@@ -714,10 +744,11 @@ textarea,
 .Reactions__ReactionIconWrapper-sc-1222jb7-2 {
     background-color: #37474F;
 }
-.dhhCGd { /* collect */
+.PostFooter__Operators-sc-1eucag2-2 > span:nth-child(2).Icon__Main-lxtano-0.eCpLte, /* collect */
+.PostBar__Operators-jwmyrh-2 > .Icon__Main-lxtano-0.eCpLte {
     fill: #7EBCFF;
 }
-.frwxYU { /* subscribe */
+.PostFooter__Operators-sc-1eucag2-2 > span:nth-child(3).Icon__Main-lxtano-0.eCpLte { /* subscribe */
     fill: #9AD689;
 }
 .ReactionModal__Root-sc-1duecvn-2.fjQgUz,
@@ -776,6 +807,9 @@ textarea,
 .PostBar_moreMenuContainer_xGZv- {
     background-color: #384248;
 }
+.PostBar_moreMenuTriangle_1Oec7:after {
+	border-color: transparent transparent #384248 #384248;
+}
 
 /* Darsys Post List */
 .DarsysPostList_container_8JRUn {
@@ -812,14 +846,14 @@ textarea,
     background-color: #37474F;
     color: #ddd;
 }
-.PostBar_moreMenuTriangle_1Oec7:after {
-	border-color: transparent transparent #384248 #384248;
-}
 .CommentEntry_content_1ATrw img {
 	border: none;
 }
 .PostBar__CommentBlock-jwmyrh-1 {
     color: rgba(255, 255, 255, 0.35);
+}
+.CommentEntry__CommentLikeCountText-fs8b9t-2 {
+    color: rgba(255, 255, 255, 0.45);
 }
 
 /* Report */
@@ -1019,7 +1053,7 @@ textarea,
 	color: #888;
 }
 .DcardReportForm_container_2OLUL {
-	color: #ccc;
+	color: #888;
 }
 .DcardPage_reportBtn_2VuGr {
 	background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+aWNfcmVwb3J0X2ZmZmZmZjwvdGl0bGU+PHBhdGggZD0iTTI0IDRDMTIuOTcyIDQgNCAxMi45NzIgNCAyNGMwIDExLjAyOSA4Ljk3MiAyMCAyMCAyMHMyMC04Ljk3MSAyMC0yMGMwLTExLjAyOC04Ljk3Mi0yMC0yMC0yMHptLS4wNzkgMjdDMjIuMjk4IDMxIDIxIDMyLjI5OSAyMSAzNC4wNTJjMCAxLjU5IDEuMjk4IDIuODkgMi45MjEgMi44OSAxLjcyMSAwIDMuMDItMS4zIDMuMDItMi44OSAwLTEuNzUzLTEuMjk5LTMuMDUyLTMuMDItMy4wNTJ6bTIuMDE0LTIuOTNsLjk0Mi0xNC43NjFBMi4zMDkgMi4zMDkgMCAwIDAgMjQuNTY3IDExSDIzLjMxQTIuMzA4IDIuMzA4IDAgMCAwIDIxIDEzLjMwOWwuOTc0IDE0Ljc2MWgzLjk2eiIgZmlsbD0iIzc2QjBFRSIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+) no-repeat;

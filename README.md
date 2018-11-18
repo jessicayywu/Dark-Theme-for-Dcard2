@@ -61,6 +61,7 @@ https://www.dcard.tw/f/dcard/p/224044083
 <li>ver. 3.141592653589793238462643383279502884197 - 2018/05/23 Fix: Topic Popup; Add: Scrollbar of Topic List</li>
 <li>ver. 3.1415926535897932384626433832795028841971 - 2018/09/06 Fix: Article Loading Card, Background of My Page; Add: Topic Subscription List, Result Box on Search Page</li>
 <li>ver. 3.14159265358979323846264338327950288419716 - 2018/11/01 Fix: Searching, Pre/Next Post; Add: Reactions</li>
+<li>ver. 3.141592653589793238462643383279502884197169 - 2018/11/19 Fix: Searching, Post Bar; Add: Topic Page</li>
 </ul>
 
 
