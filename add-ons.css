@@ -1,10 +1,10 @@
 @-moz-document domain("dcard.tw") {
 /* ---------------------Hide Picture Preview--------------------- */
-.PostEntry_picture_1d7uX {
+.PostEntry_picture_1d7uX_ {
 	display: none;
 }
-.PostEntry_content_g2afg,
-.PostEntry_excerpt_2eHlN {
+.PostEntry_content_g2afgv,
+.PostEntry_excerpt_2eHlNn {
 	max-width: none;
 }
 }
