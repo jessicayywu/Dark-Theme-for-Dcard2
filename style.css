@@ -18,13 +18,13 @@
 		|_|  |___||_|    |____/ |___||___||__,||_|  |___|
 
 		User ID: 118195
-		Updated: 2019/01/16
+		Updated: 2019/01/17
 		
 		Old:
 		https://www.dcard.tw/f/dcard/p/1145060
 		https://userstyles.org/styles/124504/dark-theme-for-dcard
 
-		Version: 3.14159265358979323846264338327950288419716939
+		Version: 3.141592653589793238462643383279502884197169399
 		https://www.dcard.tw/f/dcard/p/224044083
 		https://userstyles.org/styles/128046/dark-theme-for-dcard2
 
@@ -153,6 +153,7 @@ a:hover {
 
 /* ---------------------Main--------------------- */
 .ForumListPage_content_3Z-L9Q,
+.PostPages__Main-sc-1cz8fxj-0,
 .PostListPage_container_1pCTrD,
 .SearchPage_container_2CErHb,
 .SearchPages__Main-sd8a1q-0,
@@ -236,6 +237,12 @@ a:hover {
 .PostForm_forumSelectMenuTriangle_2pCdlw:after {
 	color: #384248;
     border-color: #384248;
+}
+.ForumPicker_forumListEntry_1TX4WR {
+	color: #ddd;
+}
+.ForumPicker_forumListEntry_1TX4WR:hover {
+    background-color: rgba(64, 196, 255, .1);
 }
 
 /* PlaceHolder */
@@ -808,6 +815,19 @@ textarea,
     fill: #f57a7a;
 }
 
+.MenuTriangle-sc-1boy0wm-0:after {
+    border-color: #384248;
+}
+.MenuContainer__Container-th7kdl-0 {
+    background-color: #384248;
+}
+.CommentEntry__MenuItem-fs8b9t-1 {
+    color: #ddd;
+}
+.CommentEntry__MenuItem-fs8b9t-1:hover {
+    background-color: rgba(64, 196, 255, .1);
+}
+
 /* Report */
 .PostReportModal_form_1OC7UV,
 .CommentReportModal_form_9QGs-1 {
@@ -860,6 +880,23 @@ textarea,
 }
 .PostReplyBox_title_1Xsqjz {
     color: #7ebcff;
+}
+
+/* GiftBox */
+.ArticleFooter__TextWrapper-srvdoa-5 {
+    background-color: #384248;
+    border-color: #4a575f;
+    box-shadow: 0 1px 2px #212121;
+}
+.PriceText__Main-z9v3yh-0.cNLXTG,
+.ArticleFooter__LittleLabel-srvdoa-1 {
+	color: #aaa;
+}
+.DeneyInfo__RowWrapper-bb1xyl-2 {
+	color: #ccc;
+}
+.ArticleHeader__Period-v1yzcu-4 {
+	color: #888;
 }
 
 /* Post Loading */
@@ -1307,7 +1344,6 @@ textarea,
 @-moz-document url("http://dcard.tw/terms/"), url("http://www.dcard.tw/terms/"), url("https://www.dcard.tw/terms/") {
 /* ---------------------Terms--------------------- */
 /* Background */
-
 html,
 .content {
     background: #212121 !important;
@@ -1342,6 +1378,14 @@ body {
 }
 .profile-photo:before {
 	border-color: transparent #37474f transparent transparent;
+}
+}
+
+@-moz-document url-prefix("https://giftbox.dcard.tw/") {
+/* ---------------------iFrame--------------------- */
+body {
+	background-color: #263238 !important;
+    color: #ccc;
 }
 }
 
