@@ -18,13 +18,13 @@
 		|_|  |___||_|    |____/ |___||___||__,||_|  |___|
 
 		User ID: 118195
-		Updated: 2019/04/21
+		Updated: 2019/06/18
 		
 		Old:
 		https://www.dcard.tw/f/dcard/p/1145060
 		https://userstyles.org/styles/124504/dark-theme-for-dcard
 
-		Version: 3.1415926535897932384626433832795028841971693993
+		Version: 3.14159265358979323846264338327950288419716939937
 		https://www.dcard.tw/f/dcard/p/224044083
 		https://userstyles.org/styles/128046/dark-theme-for-dcard2
 
@@ -148,6 +148,9 @@ a:hover {
 }
 .Notification_container_1cgArL:hover {
     background-color: rgba(64, 196, 255, .1) !important;
+}
+.NotificationLink_body_2qLcot > div > div:nth-child(1) {
+    right: -1px !important;
 }
 
 
@@ -306,7 +309,8 @@ textarea,
 /* ---------------------List--------------------- */
 /* Background */
 .PostListHeader_header_2KjhKM,
-.PersonaFollowingUpdatedPage_header_2kS0R9 {
+.PersonaFollowingUpdatedPage_header_2kS0R9,
+.SubscribedPostListHeader_header_2C3MDG {
     background-color: #263238;
 }
 .PostList_entry_1rq5Lf {
@@ -666,6 +670,9 @@ textarea,
     fill: #7ebcff;
 }
 .PostFooter__Operators-sc-1eucag2-2 > span:nth-child(3).Icon__Main-lxtano-0.eCpLte { /* subscribe */
+    fill: #f0ad4e;
+}
+.PostFooter__Operators-sc-1eucag2-2 > span:nth-child(4).Icon__Main-lxtano-0.fiFQmV:hover { /* reply */
     fill: #9ad689;
 }
 .ReactionModal__Root-sc-1duecvn-2.fjQgUz,
@@ -786,11 +793,16 @@ textarea,
     background-color: #37474f;
     border-color: #263238;
 }
-.CommentEntry_content_1ATrw1 {
+.CommentEntry_content_1ATrw1,
+.CommentEntry_floor_VtDUyr {
     color: #ccc;
 }
 .CommentEntry_moreMenuBtn_sPGifj {
     color: #ddd;
+}
+.CommentEntry_floor_VtDUyr,
+.CommentEntry__StyledLink-fs8b9t-3 {
+    opacity: .75;
 }
 .CommentList_container_3vk7FO {
 	background-color: rgba(64, 196, 255, .1);
@@ -849,12 +861,14 @@ textarea,
 }
 
 /* Embed Post */
-.EmbedPost_block_FmOI2J {
+.EmbedPost_block_FmOI2J,
+.CommentPage__PostLinkBox-sc-2q6bx3-8 {
     background-color: #384248;
     border-color: #4a575f;
     box-shadow: 0 1px 2px #212121;
 }
-.EmbedPost_title_3oHT7O {
+.EmbedPost_title_3oHT7O,
+.CommentPage__Title-sc-2q6bx3-11 {
 	color: #7ebcff;
 }
 
@@ -1083,6 +1097,11 @@ textarea,
     background-color: #37474f;
 }
 
+/* Fix */
+.MessageFriendEntry_photo_Dm36uk {
+	background-position: center;
+}
+
 
 /* ---------------------Friends--------------------- */
 /* Background */
@@ -1126,10 +1145,14 @@ textarea,
 }
 .FirstStageSchoolList_container_2XzjC2 {
 	background-color: #384248;
+    bottom: 20px;
 }
 .FirstStageSchoolList_school_21tj-t:hover {
     background-color: rgba(64, 196, 255, .1) !important;
     color: #eee;
+}
+.FirstStageSchoolList_cancelBtn_1q2Qz5 {
+	color: #ccc;
 }
 .Select_formSelect_3tPeH2 {
     color: #ddd;
@@ -1325,14 +1348,16 @@ textarea,
 /* Background */
 .Onboarding_container_12TlOs,
 .RegulationModal_container_2EUTwf,
-.ImageFailConfirmModal_modalContainer_6p47RF {
+.ImageFailConfirmModal_modalContainer_6p47RF,
+.CountrySelector__Main-g625hw-0 {
     background-color: #263238;
 }
 
 /* Text */
 .Onboarding_description_1WmrbA,
 .RegulationModal_title_3xMgeG,
-.ImageFailConfirmModal_modalContainer_6p47RF .ImageFailConfirmModal_modalTitle_276Nh0 {
+.ImageFailConfirmModal_modalContainer_6p47RF .ImageFailConfirmModal_modalTitle_276Nh0,
+.CountrySelector__Title-g625hw-1 {
     color: #eee;
 }
 .RegulationModal_content_29HK8_,
