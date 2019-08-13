@@ -67,6 +67,7 @@ https://www.dcard.tw/f/dcard/p/224044083
 <li>ver. 3.141592653589793238462643383279502884197169399 - 2019/01/17 Fix: Background of Forum List, Edit/Report Comment; Add: Gift Box</li>
 <li>ver. 3.1415926535897932384626433832795028841971693993 - 2019/04/21 Fix: Dropdown Triangle of Notification</li>
 <li>ver. 3.14159265358979323846264338327950288419716939937 - 2019/06/18 Fix: Notification Scrollbar, Subscribed Post List Header, Color of Post Footer Icons, Color of Floor and Date, Friends' Thumbnails, School Selector; Add: Post Link Box, Country Selector</li>
+<li>ver. 3.141592653589793238462643383279502884197169399375 - 2019/08/13 Fix: Hide Picture Preview, Post Footer, Ok-I-Know Modal, Forum Select Button; Add: Cross Post, Dropdown Menu on Post List</li>
 </ul>
 
 

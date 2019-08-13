@@ -18,13 +18,13 @@
 		|_|  |___||_|    |____/ |___||___||__,||_|  |___|
 
 		User ID: 118195
-		Updated: 2019/06/18
+		Updated: 2019/08/13
 		
 		Old:
 		https://www.dcard.tw/f/dcard/p/1145060
 		https://userstyles.org/styles/124504/dark-theme-for-dcard
 
-		Version: 3.14159265358979323846264338327950288419716939937
+		Version: 3.141592653589793238462643383279502884197169399375
 		https://www.dcard.tw/f/dcard/p/224044083
 		https://userstyles.org/styles/128046/dark-theme-for-dcard2
 
@@ -209,7 +209,10 @@ a:hover {
     background-color: #263238;
 }
 .PostForm_forumSelectBtn_1LoQbW {
-    color: #7ebcff;
+    background-color: #384248;
+}
+.PostForm_forumSelectBtnText_1Dedls {
+    color: #ddd;
 }
 .PostForm_title_2pZTQP,
 .public-DraftEditor-content {
@@ -334,6 +337,9 @@ textarea,
     background-color: #76b0ee;
     border-color: #333;
 }
+.PostEntry__CrossPostFrame-sc-140l15m-0 {
+    border-color: #aaa;
+}
 .PostEntry_picture_1d7uX_ .PostEntry_image_1E6Mix {
     border-color: #384248;
 }
@@ -364,9 +370,7 @@ textarea,
 }
 .PostEntry_author_UscIFm,
 .PostAuthor_root_3vAJfe,
-.PostListPage_followingListTitle_3VqKaC,
-.PostEntry_comments_2iY8V3,
-.PostEntry__LikeCount-sc-140l15m-0,
+.ActionBar__LikeCount-pwz3il-1,
 .TopicPostListHeader_title_3OhOLl,
 .TopicSubscriptionList_meta_2N-RyA,
 .TopicSubscriptionList_title_9xQWTc,
@@ -380,10 +384,10 @@ textarea,
 .PostSubscriptionBox_subscribed_JOPVtn:hover {
     color: #eee;
 }
-.PostEntry_collect_2MUL3S {
+.ActionBar__CollectButton-pwz3il-4 {
     color: rgba(255, 255, 255, .3);
 }
-.PostEntry_comments_2iY8V3 {
+.ActionBar__CommentWrapper-pwz3il-5 {
 	color: rgba(255, 255, 255, .65);
     opacity: .75;
 }
@@ -395,16 +399,20 @@ textarea,
 }
 
 /* DropDown*/
-.PostListHeader__MenuTriangle-aa5hy3-6:after {
+.PostListHeader__MenuTriangle-aa5hy3-6:after,
+.More__MoreMenuTriangle-sc-11f2yyv-2:after {
     border-color: #384248;
 }
-.PostListHeader__MenuContainer-aa5hy3-5 {
+.PostListHeader__MenuContainer-aa5hy3-5,
+.More__MoreMenuContainer-sc-11f2yyv-3 {
     background-color: #384248;
 }
-.PostListHeader__OptionText-aa5hy3-8 {
+.PostListHeader__OptionText-aa5hy3-8,
+.More__MenuItem-sc-11f2yyv-1 {
     color: #ddd;
 }
-.PostListHeader__Item-aa5hy3-7:hover {
+.PostListHeader__Item-aa5hy3-7:hover,
+.More__MenuItem-sc-11f2yyv-1:hover {
     background-color: rgba(64, 196, 255, .1);
 }
 
@@ -677,7 +685,7 @@ textarea,
     fill: #9ad689;
 }
 .ReactionModal__Root-sc-1duecvn-2.fjQgUz,
-.OkIKnowModal__Wrapper-c1se6j-0.eOJqaY{
+.OkIKnowModal__Wrapper-c1se6j-0 {
 	background-color: #263238;
 }
 .ReactionModal__Header-sc-1duecvn-3.gmtnUg,
@@ -685,7 +693,7 @@ textarea,
     color: #eee;
 }
 .ReactionModal__ReactionName-sc-1duecvn-6,
-.OkIKnowModal__Content-c1se6j-2 {
+.OkIKnowModal__Wrapper-c1se6j-0 .gVVJrd {
     color: #ddd;
 }
 .ReactionModal__ReactionCount-sc-1duecvn-7 {
@@ -695,7 +703,7 @@ textarea,
 .ReactionModal__CloseIcon-sc-1duecvn-8:after {
     background-color: #eee;
 }
-.OkIKnowModal__Button-c1se6j-3 {
+.OkIKnowModal__Button-c1se6j-2 {
     background-color: #7ebcff;
 }
 
@@ -863,14 +871,22 @@ textarea,
 
 /* Embed Post */
 .EmbedPost_block_FmOI2J,
-.CommentPage__PostLinkBox-sc-2q6bx3-8 {
+.CommentPage__PostLinkBox-sc-2q6bx3-8,
+.CrossPost__CrossPostFrame-ysc3pw-1 {
     background-color: #384248;
     border-color: #4a575f;
     box-shadow: 0 1px 2px #212121;
 }
 .EmbedPost_title_3oHT7O,
-.CommentPage__Title-sc-2q6bx3-11 {
+.CommentPage__Title-sc-2q6bx3-11,
+.CrossPost__CrossPostHeader-ysc3pw-2 {
 	color: #7ebcff;
+}
+.CrossPost__CrossPostContent-ysc3pw-6 {
+    color: #ccc;
+}
+.CrossPost__CrossPostFooter-ysc3pw-7 {
+	color: rgba(255, 255, 255, .65)
 }
 
 /* Post Reply */
