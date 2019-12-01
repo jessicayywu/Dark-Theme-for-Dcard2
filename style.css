@@ -18,13 +18,13 @@
 		|_|  |___||_|    |____/ |___||___||__,||_|  |___|
 
 		User ID: 118195
-		Updated: 2019/08/13
+		Updated: 2019/12/01
 		
 		Old:
 		https://www.dcard.tw/f/dcard/p/1145060
 		https://userstyles.org/styles/124504/dark-theme-for-dcard
 
-		Version: 3.141592653589793238462643383279502884197169399375
+		Version: 3.1415926535897932384626433832795028841971693993751
 		https://www.dcard.tw/f/dcard/p/224044083
 		https://userstyles.org/styles/128046/dark-theme-for-dcard2
 
@@ -116,6 +116,13 @@ a:hover {
     -moz-filter: grayscale(70%) brightness(200%);
     -ms-filter: grayscale(70%) brightness(200%);
     -o-filter: grayscale(70%) brightness(200%);
+}
+.Notification_icon_V4gE5x img[src="/build/ic_report-206a9fb6.svg"] {
+    filter: grayscale(30%) brightness(150%);
+    -webkit-filter: grayscale(30%) brightness(150%);
+    -moz-filter: grayscale(30%) brightness(150%);
+    -ms-filter: grayscale(30%) brightness(150%);
+    -o-filter: grayscale(30%) brightness(150%);
 }
 
 /* Loading */
@@ -416,6 +423,38 @@ textarea,
     background-color: rgba(64, 196, 255, .1);
 }
 
+/* Forum Info */
+.ForumInfo__Main-sc-1rv7epg-0,
+.ForumInfo__Description-sc-1rv7epg-5 {
+    background-color: #263238;
+}
+.ForumInfo__Title-sc-1rv7epg-2 {
+	color: #ddd;
+}
+.ForumInfo__Info-sc-1rv7epg-3 {
+    color: #7ebcff;
+}
+.ForumInfo__Description-sc-1rv7epg-5 {
+    color: #ccc;
+}
+
+/* Forum Rule */
+.ForumRule__Main-f3474j-0 {
+    background-color: #263238;
+}
+.ForumRule__BlockTitle-f3474j-1,
+.ForumRulePage__Title-sc-1etpy9n-2 {
+	color: #ddd;
+}
+.ForumRule__Title-f3474j-4,
+.ForumRulePage__Main-sc-1etpy9n-0 {
+	color: #ccc;
+}
+.ForumRule__RuleContent-f3474j-5,
+.ForumRulePage__RuleContent-sc-1etpy9n-7,
+.ForumRulePage__IssueDate-sc-1etpy9n-6 {
+	color: #bbb;
+}
 
 /* ---------------------Search--------------------- */
 .PersonaSearchPage_boldQuery_hzsLL1 {
@@ -747,6 +786,21 @@ textarea,
 	border-color: transparent transparent #384248 #384248;
 }
 
+/* Post Info */
+.PostInfo__Main-sc-16m4w69-0 {
+    background-color: rgba(64, 196, 255, .1);
+}
+.PostInfo__Title-sc-16m4w69-1 {
+    color: #7ebcff;
+}
+.PostInfo__InfoTitle-sc-16m4w69-7 {
+    color: #ddd;
+}
+.PostInfo__Section-sc-16m4w69-2 {
+	border-color: #e9e9e9;
+}
+
+
 /* Darsys Post List */
 .DarsysPostList_container_8JRUnC {
 	background-color: #263238;
@@ -928,6 +982,18 @@ textarea,
 }
 .ArticleHeader__Period-v1yzcu-4 {
 	color: #888;
+}
+.GoodsPromotion__Main-sc-12u0d7d-0 {
+    background-color: #263238;
+}
+.GoodsPromotion__Header-sc-12u0d7d-1 {
+    border-color: #e9e9e9;
+}
+.GoodsPromotion__BlockTitle-sc-12u0d7d-2 {
+    color: #7ebcff;
+}
+.GoodsPromotion__Title-sc-12u0d7d-6 {
+    color: #ddd;
 }
 
 /* Post Loading */
@@ -1338,7 +1404,7 @@ textarea,
 }
 
 /* ---------------------AD--------------------- */
-.ForumAdContainer_ad_OhhTY_ {
+.ForumAdContainer_ad_OhhTY_>div:not(.ForumInfo__Main-sc-1rv7epg-0):not(.ForumRule__Main-f3474j-0) {
 	filter: grayscale(100%);
     filter: gray;
 	-webkit-filter: grayscale(100%);
@@ -1366,7 +1432,8 @@ textarea,
 .Onboarding_container_12TlOs,
 .RegulationModal_container_2EUTwf,
 .ImageFailConfirmModal_modalContainer_6p47RF,
-.CountrySelector__Main-g625hw-0 {
+.CountrySelector__Main-g625hw-0,
+.LoginVerificationPage__Content-sc-1b804dq-1 {
     background-color: #263238;
 }
 
@@ -1374,16 +1441,18 @@ textarea,
 .Onboarding_description_1WmrbA,
 .RegulationModal_title_3xMgeG,
 .ImageFailConfirmModal_modalContainer_6p47RF .ImageFailConfirmModal_modalTitle_276Nh0,
-.CountrySelector__Title-g625hw-1 {
+.CountrySelector__Title-g625hw-1,
+.LoginVerificationPage__Title-sc-1b804dq-2 {
     color: #eee;
 }
 .RegulationModal_content_29HK8_,
-.ImageFailConfirmModal_modalContainer_6p47RF .ImageFailConfirmModal_modalContent_2MpsKU {
+.ImageFailConfirmModal_modalContainer_6p47RF .ImageFailConfirmModal_modalContent_2MpsKU,
+.LoginVerificationPage__Content-sc-1b804dq-1 {
 	color: #ddd;
 }
 }
 
-@-moz-document url("http://dcard.tw/terms/"), url("http://www.dcard.tw/terms/"), url("https://www.dcard.tw/terms/") {
+@-moz-document regexp("http(s?)://(www.|)dcard.tw/terms/") {
 /* ---------------------Terms--------------------- */
 /* Background */
 html,
@@ -1409,7 +1478,7 @@ li {
 }
 }
 
-@-moz-document url("https://www.dcard.tw/post-rule/index.html"), url("https://dcard.tw/post-rule/index.html"), url("http://www.dcard.tw/post-rule/index.html"), url("http://dcard.tw/post-rule/index.html") {
+@-moz-document regexp("http(s?)://(www.|)dcard.tw/post-rule/index.html") {
 body {
     background-color: #263238 !important;
 }
@@ -1425,13 +1494,22 @@ body {
 
 @-moz-document url-prefix("https://giftbox.dcard.tw/") {
 /* ---------------------iFrame--------------------- */
-body {
+body,
+.ArticleHeaderCarousel__Main-sc-1cnuq88-0,
+.ArticleHeader__OuterWrapper-v1yzcu-1 {
 	background-color: #263238 !important;
-    color: #ccc;
+}
+.ArticleHeader__PeriodText-v1yzcu-4,
+.SpecialPrice__Deprecated-cborh6-3>.PriceText__Main-z9v3yh-0 {
+	color: #ccc;
+}
+.ArticleHeader__CountWrapper-v1yzcu-5:before,
+.ArticleHeader__Main-v1yzcu-0{
+	border-color: #ccc;
 }
 }
 
-@-moz-document url-prefix("https://www.dcard.tw/_api/"), url-prefix("http://www.dcard.tw/_api/"), url-prefix("https://dcard.tw/_api/"), url-prefix("http://dcard.tw/_api/") {
+@-moz-document regexp("http(s?)://(www.|)dcard.tw/_api/(.*)") {
 /* ---------------------API--------------------- */
 body {
     background: #eee !important;
